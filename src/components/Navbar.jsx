@@ -9,7 +9,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className="fixed w-full h-20 flex justify-between items-center px-4 bg-[#171810] text-gray-300 z-10">
+    <div className="fixed w-full h-20 flex justify-between items-center px-4 bg-[#171810] text-gray-300 z-10 ">
       <div>
         <img
           src={Logo}
@@ -122,7 +122,7 @@ const Navbar = () => {
             >
               Email <AiOutlineMail size={30} />
             </a>
-          </li>{" "}
+          </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-cyan-600">
             <a
               href="/about"
@@ -133,6 +133,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      {/* Scroll top  */}
     </div>
   );
 };

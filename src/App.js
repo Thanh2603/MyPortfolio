@@ -7,6 +7,9 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 function App() {
+  // const scrollTop = useEffect(() => {
+  //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  // }, []);
   return (
     <div>
       <Navbar />

@@ -10,13 +10,13 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
   return (
     <div className="fixed w-full h-20 flex justify-between items-center px-4 bg-[#171810] text-gray-300 z-10 ">
-      <div>
+      <Link to="home" smooth={true} duration={500}>
         <img
           src={Logo}
           alt="Logo Image"
           style={{ width: "100px", height: "80px" }}
         />
-      </div>
+      </Link>
       {/* Menu */}
       <ul className="hidden md:flex ">
         <li className=" hover:text-cyan-400">

@@ -6,8 +6,14 @@ import Javascript from "../assets/javascript.png";
 import ReactJS from "../assets/react.png";
 import Tailwind from "../assets/tailwind.png";
 import Github from "../assets/github.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Skills = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div name="skills" className=" w-full h-screen">
       {/* Container */}
@@ -16,10 +22,15 @@ const Skills = () => {
           <p className="text-4xl  font-bold inline border-b-4 hover:border-cyan-400  ">
             Skills
           </p>
-          <p className="py-4">// These are the technologies I've worked with</p>
+          <p className="py-4" data-aos="zoom-in">
+            // These are the technologies I've worked with
+          </p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-14">
+        <div
+          className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-14"
+          data-aos="zoom-in-up"
+        >
           <div className="shadow-md hover:scale-110 duration-300 hover:bg-cyan-50 pt-4 group select-none">
             <img
               className="w-20 mx-auto saturate-50 group-hover:saturate-100 duration-500 "

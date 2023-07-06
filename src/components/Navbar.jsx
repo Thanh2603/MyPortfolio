@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
   return (
     <div className="fixed w-full h-20 flex justify-between items-center px-4 bg-[#171810] text-gray-300 z-10 ">
-      <Link to="home" smooth={true} duration={500}>
+      <Link to="home" smooth={true} duration={500} className="cursor-pointer">
         <img
           src={Logo}
           alt="Logo Image"
@@ -19,32 +19,32 @@ const Navbar = () => {
       </Link>
       {/* Menu */}
       <ul className="hidden md:flex ">
-        <li className=" hover:text-cyan-400">
+        <li className=" hover:text-cyan-400 hover:border-b-[.5px] border-b-cyan-400">
           <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className=" hover:text-cyan-400">
+        <li className=" hover:text-cyan-400 hover:border-b-[.5px] border-b-cyan-400">
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className=" hover:text-cyan-400">
+        <li className=" hover:text-cyan-400 hover:border-b-[.5px] border-b-cyan-400">
           <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className=" hover:text-cyan-400">
+        <li className=" hover:text-cyan-400 hover:border-b-[.5px] border-b-cyan-400">
           <Link to="experience" smooth={true} duration={500}>
             Experience
           </Link>
         </li>
-        <li className=" hover:text-cyan-400">
+        <li className=" hover:text-cyan-400 hover:border-b-[.5px] border-b-cyan-400">
           <Link to="projects" smooth={true} duration={500}>
             Projects
           </Link>
         </li>
-        <li className=" hover:text-cyan-400">
+        <li className=" hover:text-cyan-400 hover:border-b-[.5px] border-b-cyan-400">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>

@@ -1,6 +1,11 @@
 import React from "react";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div
       name="contact"
@@ -15,7 +20,7 @@ const Contact = () => {
           <p className="text-4xl font-bold inline border-b-4 hover:border-cyan-400 text-cyan-700">
             Contact
           </p>
-          <p className="text-cyan-700 py-4">
+          <p className="text-cyan-700 py-4" data-aos="zoom-in">
             //Submit the form below or shoot me an email
           </p>
         </div>

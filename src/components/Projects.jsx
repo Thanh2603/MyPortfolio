@@ -2,7 +2,13 @@ import React from "react";
 import ProjectImg from "../assets/project.png";
 import ProjectImg2 from "../assets/project2.png";
 import ProjectImg3 from "../assets/project3.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Projects = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div name="projects" className="  w-full md:h-screen text-cyan-700">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
@@ -10,7 +16,9 @@ const Projects = () => {
           <p className="text-4xl font-bold inline border-b-4 text-cyan-700 hover:border-cyan-400">
             Projects
           </p>
-          <p className="py-6">//Check out some of my projects</p>
+          <p className="py-6" data-aos="zoom-in">
+            //Check out some of my projects
+          </p>
         </div>
         {/* Container */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -18,6 +26,7 @@ const Projects = () => {
           <div
             style={{ backgroundImage: `url(${ProjectImg})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+            data-aos="slide-right"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
@@ -41,6 +50,7 @@ const Projects = () => {
           <div
             style={{ backgroundImage: `url(${ProjectImg2})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+            data-aos="zoom-out"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100 flex flex-col">
@@ -64,6 +74,7 @@ const Projects = () => {
           <div
             style={{ backgroundImage: `url(${ProjectImg3})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+            data-aos="slide-left"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
